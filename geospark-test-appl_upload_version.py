@@ -3,9 +3,6 @@ import datetime
 from pyspark.sql import SparkSession
 from pyspark.sql.types import *
 from geospark.register import GeoSparkRegistrator
-from geospark.utils import GeoSparkKryoRegistrator, KryoSerializer
-from geospark.register import upload_jars
-
 
 if __name__ == "__main__":
 
