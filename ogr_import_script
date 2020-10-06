@@ -1,0 +1,1 @@
+ogr2ogr -append -progress -sql "select osm_id,osm_way_id,name from multipolygons where boundary = 'administrative' AND admin_level = '4'" -nln us_states  -f "PostgreSQL" PG:"host=XXXXXXXX.us-west-2.rds.amazonaws.com port=5432 user='postgres' password='XXXXXXX ' dbname='postgres'" us-latest.osm.pbf
